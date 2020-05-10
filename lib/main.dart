@@ -1,17 +1,15 @@
-import 'package:brl_app/coor.dart';
 import 'package:flutter/material.dart';
 import 'package:flare_flutter/flare_actor.dart';
-//import 'package:brl_app/backg.dart';
+//import 'package:flutter/services.dart';
 
+import 'coor.dart';
 
-
-
-
-void main() => runApp(MyApp());
+void main() {
+  runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
-  @override
+   @override
   Widget build(BuildContext context) {
     return MaterialApp(
      debugShowCheckedModeBanner: false,
@@ -20,12 +18,13 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class MyHomePage extends StatefulWidget {
+class Splash extends StatefulWidget {
   @override
-  _MyHomePageState createState() => _MyHomePageState();
+  _SplashState createState() => _SplashState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _SplashState extends State<Splash> {
+   
   @override
   Widget build(BuildContext context) {
     return Scaffold(

@@ -26,6 +26,8 @@ dependencies:
   flare_flutter: ^2.0.1
   auto_size_text: ^2.1.0
   smart_flare: any
+  google_fonts: ^1.0.0
+  cached_network_image: ^2.2.0+1
 
 dev_dependencies:
   flutter_test:
@@ -46,8 +48,6 @@ flutter:
   assets:
    - assets/Splash.flr
    - assets/App bg.flr
-   - assets/leaves.jpg
-   - assets/Bg.flr
   #  - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
@@ -61,10 +61,10 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  fonts:
-    - family: Cocogoose
-      fonts:
-        - asset: assets/Cocogoose Pro-trial.ttf
+  # fonts:
+  #   - family: Cocogoose
+  #     fonts:
+  #       - asset: assets/Cocogoose Pro-trial.ttf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro

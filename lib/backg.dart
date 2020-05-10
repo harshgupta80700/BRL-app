@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-//5import 'package:flare_flutter/flare_actor.dart';
+
 import 'package:smart_flare/actors/smart_flare_actor.dart';
 
 class BG extends StatefulWidget {
