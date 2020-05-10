@@ -53,7 +53,7 @@ class _Coordinators2State extends State<Coordinators2> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: <Widget>[
-                      Text("Coordinators", style: GoogleFonts.corben(fontSize: MediaQuery.of(context).size.height*0.055,color: colorblue.withOpacity(1),fontWeight: FontWeight.bold)),
+                      Text("Coordinators", style: GoogleFonts.corben(fontSize: MediaQuery.of(context).size.width*0.11,color: colorblue.withOpacity(1),fontWeight: FontWeight.bold)),
                       //Text("Coordinators",style: TextStyle(fontSize: MediaQuery.of(context).size.height*0.062 ,color: Colors.black,fontFamily: 'Cocogoose'),),
                     ],
                   ),
@@ -68,8 +68,8 @@ class _Coordinators2State extends State<Coordinators2> {
                     children: <Widget>[
                       RichText(text: TextSpan(
                         children: [
-                          TextSpan(text:"Second",style: GoogleFonts.patrickHand(fontSize: MediaQuery.of(context).size.height*0.06,color: colorblue.withOpacity(1))),
-                          TextSpan(text:" Year",style: GoogleFonts.patrickHand(fontSize: MediaQuery.of(context).size.height*0.06,color:Colors.black))
+                          TextSpan(text:"Second",style: GoogleFonts.patrickHand(fontSize: MediaQuery.of(context).size.width*0.1,color: colorblue.withOpacity(1))),
+                          TextSpan(text:" Year",style: GoogleFonts.patrickHand(fontSize: MediaQuery.of(context).size.width*0.1,color:Colors.black))
                         ]
                       ))
                       //Text("Second Year",style: GoogleFonts.patrickHand(fontSize: MediaQuery.of(context).size.height*0.06,color: colorblue.withOpacity(1))),
@@ -90,24 +90,24 @@ class _Coordinators2State extends State<Coordinators2> {
                             return Column(
                               children: <Widget>[
                                 Container(
-                                  height: MediaQuery.of(context).size.width*0.25,
-                                  width: MediaQuery.of(context).size.width*0.25,
+                                  height: MediaQuery.of(context).size.width*0.28,
+                                  width: MediaQuery.of(context).size.width*0.28,
                                   decoration: BoxDecoration(
                                     shape: BoxShape.circle,
                                     color: colorblue.withOpacity(1),
                                   ),
                                   child: Center(
                                     child: Container(
-                                      height: MediaQuery.of(context).size.width*0.24,
-                                    width: MediaQuery.of(context).size.width*0.24,
+                                      height: MediaQuery.of(context).size.width*0.27,
+                                    width: MediaQuery.of(context).size.width*0.27,
                                     decoration: BoxDecoration(
                                       shape: BoxShape.circle,
                                       color: Colors.white
                                     ),
                                       child: Center(
                                         child: Container(
-                                          height: MediaQuery.of(context).size.width*0.23,
-                                          width: MediaQuery.of(context).size.width*0.23,
+                                          height: MediaQuery.of(context).size.width*0.26,
+                                          width: MediaQuery.of(context).size.width*0.26,
                                           decoration: BoxDecoration(
                                             shape: BoxShape.circle,
                                             color: Colors.black,
@@ -121,9 +121,10 @@ class _Coordinators2State extends State<Coordinators2> {
 
                                 SizedBox(height: MediaQuery.of(context).size.height*0.013),
 
-                                Center(child: Text(names[i],textAlign: TextAlign.center,style: TextStyle(fontSize: MediaQuery.of(context).size.height*0.022,color: Colors.black,),)),
-
-                                SizedBox(height: MediaQuery.of(context).size.height*0.043),
+                                Center(child: Text(names[i],textAlign: TextAlign.center,style: TextStyle(fontSize: MediaQuery.of(context).size.width*0.045,color: Colors.black,),)),
+                                
+                                SizedBox(height: MediaQuery.of(context).size.height*0.055),
+                                
 
                               ],
                             );
@@ -147,24 +148,24 @@ class _Coordinators2State extends State<Coordinators2> {
                             return Column(
                               children: <Widget>[
                                 Container(
-                                  height: MediaQuery.of(context).size.width*0.25,
-                                  width: MediaQuery.of(context).size.width*0.25,
+                                  height: MediaQuery.of(context).size.width*0.28,
+                                  width: MediaQuery.of(context).size.width*0.28,
                                   decoration: BoxDecoration(
                                     shape: BoxShape.circle,
                                     color: colorblue.withOpacity(1),
                                   ),
                                   child: Center(
                                     child: Container(
-                                      height: MediaQuery.of(context).size.width*0.24,
-                                    width: MediaQuery.of(context).size.width*0.24,
+                                      height: MediaQuery.of(context).size.width*0.27,
+                                    width: MediaQuery.of(context).size.width*0.27,
                                     decoration: BoxDecoration(
                                       shape: BoxShape.circle,
                                       color: Colors.white
                                     ),
                                       child: Center(
                                         child: Container(
-                                          height: MediaQuery.of(context).size.width*0.23,
-                                          width: MediaQuery.of(context).size.width*0.23,
+                                          height: MediaQuery.of(context).size.width*0.26,
+                                          width: MediaQuery.of(context).size.width*0.26,
                                           decoration: BoxDecoration(
                                             shape: BoxShape.circle,
                                             color: Colors.black,
@@ -178,9 +179,9 @@ class _Coordinators2State extends State<Coordinators2> {
 
                                 SizedBox(height: MediaQuery.of(context).size.height*0.013),
 
-                                Text(names[i],textAlign: TextAlign.center,style: TextStyle(fontSize: MediaQuery.of(context).size.height*0.022,color: Colors.black),),
+                                Text(names[i],textAlign: TextAlign.center,style: TextStyle(fontSize: MediaQuery.of(context).size.width*0.045,color: Colors.black),),
 
-                                SizedBox(height: MediaQuery.of(context).size.height*0.043),
+                                SizedBox(height: MediaQuery.of(context).size.height*0.055),
 
                               ],
                             );
@@ -205,24 +206,24 @@ class _Coordinators2State extends State<Coordinators2> {
                             return Column(
                               children: <Widget>[
                                 Container(
-                                height: MediaQuery.of(context).size.width*0.25,
-                                width: MediaQuery.of(context).size.width*0.25,
+                                height: MediaQuery.of(context).size.width*0.28,
+                                width: MediaQuery.of(context).size.width*0.28,
                                 decoration: BoxDecoration(
                                   shape: BoxShape.circle,
                                   color: colorblue.withOpacity(1)
                                 ),
                                 child: Center(
                                     child: Container(
-                                      height: MediaQuery.of(context).size.width*0.24,
-                                    width: MediaQuery.of(context).size.width*0.24,
+                                      height: MediaQuery.of(context).size.width*0.27,
+                                    width: MediaQuery.of(context).size.width*0.27,
                                     decoration: BoxDecoration(
                                       shape: BoxShape.circle,
                                       color: Colors.white
                                     ),
                                       child: Center(
                                         child: Container(
-                                          height: MediaQuery.of(context).size.width*0.23,
-                                          width: MediaQuery.of(context).size.width*0.23,
+                                          height: MediaQuery.of(context).size.width*0.26,
+                                          width: MediaQuery.of(context).size.width*0.26,
                                           decoration: BoxDecoration(
                                             shape: BoxShape.circle,
                                             color: Colors.black,
@@ -236,9 +237,9 @@ class _Coordinators2State extends State<Coordinators2> {
 
                                 SizedBox(height: MediaQuery.of(context).size.height*0.013),
 
-                                Text(names[i],textAlign: TextAlign.center,style: TextStyle(fontSize: MediaQuery.of(context).size.height*0.022,color: Colors.black ),),
+                                Text(names[i],textAlign: TextAlign.center,style: TextStyle(fontSize: MediaQuery.of(context).size.width*0.045,color: Colors.black ),),
 
-                                SizedBox(height: MediaQuery.of(context).size.height*0.043),
+                                SizedBox(height: MediaQuery.of(context).size.height*0.055),
 
                               ],
                             );
