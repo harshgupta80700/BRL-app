@@ -1,9 +1,9 @@
-//import 'dart:html';
+import 'package:brl_app/backg.dart';
 import 'home/home.dart';
 import 'news/news.dart';
 import 'contact/contact.dart';
 import 'events/events.dart';
-import 'package:brl_app/coor.dart';
+import  'coordinators/coor.dart';
 import 'package:flutter/material.dart';
 import 'package:smart_flare/actors/smart_flare_actor.dart';
 
@@ -28,7 +28,7 @@ class _NavState extends State<Nav> {
       
       case 1: return Home();
       case 2: return News();
-      case 3: return Coordinators2();
+      case 3: return Coor();
       case 4: return Contact();
       case 5: return Events();
     }
@@ -44,17 +44,27 @@ class _NavState extends State<Nav> {
     // contact?contactani="splash":contactani="contact";
     // event?eventani="splash":eventani="event";
     homeani="splash";
-    index =1;
+    index =3;
   }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
         children: <Widget>[
-          Expanded(child: Container(child: showpage(index))),
+          Expanded(child: Container(child:Stack(
+            fit: StackFit.expand,
+            children: [
+              BG(),
+              Container(
+                color: Colors.white24,
+              ),
+              showpage(index)
+            ],
+          ))),
           Container(
             width: MediaQuery.of(context).size.width,
             height: MediaQuery.of(context).size.height*0.07,
+            color: colorblue.withOpacity(0.5),
             //color: colorblue,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,

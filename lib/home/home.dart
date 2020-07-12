@@ -1,3 +1,4 @@
+//import 'package:brl_app/backg.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatefulWidget {
@@ -8,12 +9,21 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        
-      ),
-      backgroundColor: Colors.pink,
-      body: Text("Home page"),
-    );
+    return  Stack(
+        fit: StackFit.expand,
+        children: <Widget>[
+          // Container(
+          //   height: MediaQuery.of(context).size.height,
+          //   width: MediaQuery.of(context).size.width,
+          //   child: BG()
+          // ),
+
+          // Container(
+          //   height: MediaQuery.of(context).size.height,
+          //   width: MediaQuery.of(context).size.width,
+          //   color: Colors.white30,
+          // ),
+        ],
+      );
   }
 }

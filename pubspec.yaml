@@ -28,6 +28,8 @@ dependencies:
   smart_flare: any
   google_fonts: ^1.0.0
   cached_network_image: ^2.2.0+1
+  carousel_slider: ^1.4.1
+  flare_splash_screen: ^3.0.1
 
 dev_dependencies:
   flutter_test:

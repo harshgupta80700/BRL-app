@@ -1,4 +1,4 @@
-import 'package:brl_app/backg.dart';
+//import 'package:brl_app/backg.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 //import 'package:cached_network_image/cached_network_image.dart';
@@ -26,26 +26,24 @@ class _Coordinators2State extends State<Coordinators2> {
   }
     @override
   Widget build(BuildContext context) {
-    return Scaffold(
-        body: Stack(
+    return Stack(
         fit: StackFit.expand,
         children: <Widget>[
+          // Container(
+          //   height: MediaQuery.of(context).size.height,
+          //   width: MediaQuery.of(context).size.width,
+          //   child: BG(),
+          // ),
+        //   Container(
+        //     height: MediaQuery.of(context).size.height,
+        //     width: MediaQuery.of(context).size.width,
+        //     color: Colors.white30,
+        // ),
           Container(
             height: MediaQuery.of(context).size.height,
             width: MediaQuery.of(context).size.width,
-            child: BG(),
-          ),
-          Container(
-            height: MediaQuery.of(context).size.height,
-            width: MediaQuery.of(context).size.width,
-            color: Colors.white30,
-          ),
-          SingleChildScrollView(
-            scrollDirection: Axis.vertical,
             child: Column(
-              
               children: <Widget>[
-
                 SizedBox(height: MediaQuery.of(context).size.height*0.03),
                 
                 Padding(
@@ -79,6 +77,15 @@ class _Coordinators2State extends State<Coordinators2> {
 
                 SizedBox(height: MediaQuery.of(context).size.height*0.04),
 
+                Expanded(child: 
+                Container(
+                  child: SingleChildScrollView(
+            scrollDirection: Axis.vertical,
+            child: Column(
+              
+              children: <Widget>[
+
+                
                 Row(
                   children: <Widget>[
                     Container(
@@ -110,7 +117,7 @@ class _Coordinators2State extends State<Coordinators2> {
                                           width: MediaQuery.of(context).size.width*0.26,
                                           decoration: BoxDecoration(
                                             shape: BoxShape.circle,
-                                            color: Colors.black,
+                                            color: Colors.blue.withOpacity(.5),
                                             image: DecorationImage(image: NetworkImage(url),fit: BoxFit.fitHeight)
                                           ),
                                         )
@@ -168,7 +175,7 @@ class _Coordinators2State extends State<Coordinators2> {
                                           width: MediaQuery.of(context).size.width*0.26,
                                           decoration: BoxDecoration(
                                             shape: BoxShape.circle,
-                                            color: Colors.black,
+                                            color: Colors.blue.withOpacity(.5),
                                             image: DecorationImage(image: NetworkImage(url),fit: BoxFit.fitHeight)
                                           ),
                                         )
@@ -226,7 +233,7 @@ class _Coordinators2State extends State<Coordinators2> {
                                           width: MediaQuery.of(context).size.width*0.26,
                                           decoration: BoxDecoration(
                                             shape: BoxShape.circle,
-                                            color: Colors.black,
+                                            color: Colors.blue.withOpacity(.5),
                                             image: DecorationImage(image: NetworkImage(url),fit: BoxFit.fitHeight)
                                           ),
                                         )
@@ -253,10 +260,15 @@ class _Coordinators2State extends State<Coordinators2> {
 
               ],
             ),
-          )
+          ),
+                ))
+
+              ],
+            ),
+          ),
+          
 
         ],
-      ),      
-    );
+      );      
   }
 }
