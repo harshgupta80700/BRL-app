@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "147911777395",
+    "firebase_url": "https://brlapp-39e5d.firebaseio.com",
+    "project_id": "brlapp-39e5d",
+    "storage_bucket": "brlapp-39e5d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:147911777395:android:94f9dc6e7566736134de06",
+        "android_client_info": {
+          "package_name": "com.example.brl_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "147911777395-2udqe15rud7n186rim2buv0gag7kk8uc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKfgYdHrmBgA9UaUpZjn2ILOR4SVbKq1o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "147911777395-2udqe15rud7n186rim2buv0gag7kk8uc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -24,12 +24,11 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
   flare_flutter: ^2.0.1
-  auto_size_text: ^2.1.0
   smart_flare: any
+  firebase_auth: ^0.16.1
   google_fonts: ^1.0.0
-  cached_network_image: ^2.2.0+1
-  carousel_slider: ^1.4.1
-  flare_splash_screen: ^3.0.1
+  shared_preferences: ^0.5.8
+  
 
 dev_dependencies:
   flutter_test:
@@ -51,6 +50,7 @@ flutter:
    - assets/Splash.flr
    - assets/App bg.flr
    - assets/service.flr
+   - assets/BRLappsplash.flr
   #  - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
