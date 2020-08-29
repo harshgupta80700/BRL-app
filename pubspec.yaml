@@ -1,6 +1,10 @@
 name: brl_app
 description: A new Flutter project.
 
+# The following line prevents the package from being accidentally published to
+# pub.dev using `pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
 # The following defines the version and build number for your application.
 # A version number is three numbers separated by dots, like 1.2.43
 # followed by an optional build number separated by a +.
@@ -14,29 +18,39 @@ description: A new Flutter project.
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.1.0 <3.0.0"
+  sdk: ">=2.7.0 <3.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
 
+
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
-  cupertino_icons: ^0.1.2
-  flare_flutter: ^2.0.1
+  cupertino_icons: ^0.1.3
   smart_flare: any
-  firebase_auth: ^0.16.1
-  google_fonts: ^1.0.0
-  shared_preferences: ^0.5.8
-  
+  firebase_auth:
+  google_sign_in:
+  rxdart: ^0.24.1
+  shared_preferences:
+  auto_size_text: ^2.1.0
+  google_fonts:
+  carousel_pro:
+  carousel_slider:
+  cached_network_image:
+  flutter_swiper:
+  flip_card:
+  url_launcher:
+  firebase_storage:
+
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
-
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
+
 # The following section is specific to Flutter.
 flutter:
 
@@ -47,11 +61,17 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-   - assets/Splash.flr
-   - assets/App bg.flr
-   - assets/service.flr
-   - assets/BRLappsplash.flr
-  #  - images/a_dot_ham.jpeg
+    - assets/BRLappsplash.flr
+    - assets/App bg.flr
+    - assets/blockchainlogowhite-min.png
+    - assets/GroupPic1.jpg
+    - assets/brlhex-min.png
+    - assets/google.png
+    - assets/instagram.png
+    - assets/linkedin.png
+    - assets/gmail.png
+    - assets/github.png
+  #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
@@ -65,9 +85,9 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   # fonts:
-  #   - family: Cocogoose
+  #   - family: Schyler
   #     fonts:
-  #       - asset: assets/Cocogoose Pro-trial.ttf
+  #       - asset: fonts/Schyler-Regular.ttf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro

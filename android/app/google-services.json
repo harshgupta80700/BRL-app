@@ -8,12 +8,20 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:147911777395:android:94f9dc6e7566736134de06",
+        "mobilesdk_app_id": "1:147911777395:android:0eb6c9efd0929ce734de06",
         "android_client_info": {
           "package_name": "com.example.brl_app"
         }
       },
       "oauth_client": [
+        {
+          "client_id": "147911777395-1u1fk03pr8ofn17mk55sjovg2ano7ak7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.brl_app",
+            "certificate_hash": "b3260a0eaebd959182ac7a2f9e428e5398568703"
+          }
+        },
         {
           "client_id": "147911777395-2udqe15rud7n186rim2buv0gag7kk8uc.apps.googleusercontent.com",
           "client_type": 3
@@ -30,6 +38,13 @@
             {
               "client_id": "147911777395-2udqe15rud7n186rim2buv0gag7kk8uc.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "147911777395-ceaggk6jknvatlhic56tedsnsr87ej82.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "BRLapplication"
+              }
             }
           ]
         }

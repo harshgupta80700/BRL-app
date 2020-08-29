@@ -1,25 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:smart_flare/smart_flare.dart';
 
-import 'package:smart_flare/actors/smart_flare_actor.dart';
-
-class BG extends StatefulWidget {
+class BackGround extends StatelessWidget {
   @override
-  _BGState createState() => _BGState();
-}
-
-class _BGState extends State<BG> {
-@override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Stack(
+        fit: StackFit.expand,
         children: <Widget>[
-
           Align(
             alignment: Alignment(0, 0),
             child: SmartFlareActor(width: MediaQuery.of(context).size.width, height: MediaQuery.of(context).size.height, filename: 'assets/App bg.flr',startingAnimation: 'ten',) ,
           ),
 
-         Align(
+          Align(
             alignment: Alignment(0, 0),
             child: SmartFlareActor(width: MediaQuery.of(context).size.width, height: MediaQuery.of(context).size.height, filename: 'assets/App bg.flr',startingAnimation: 'two',) ,
           ),
@@ -28,8 +22,6 @@ class _BGState extends State<BG> {
             alignment: Alignment(-1, -1),
             child: SmartFlareActor(width: MediaQuery.of(context).size.width*0.75, height: MediaQuery.of(context).size.height*0.75, filename: 'assets/App bg.flr',startingAnimation: 'five',) ,
           ),
-
-          
 
           Align(
             alignment: Alignment(1, -1),
@@ -86,14 +78,14 @@ class _BGState extends State<BG> {
             alignment: Alignment(-1,-1),
             child: SmartFlareActor(width: MediaQuery.of(context).size.width*0.15, height: MediaQuery.of(context).size.height*0.15, filename: 'assets/App bg.flr',startingAnimation: 'ten',) ,
           ),
-         
 
-           Align(
+
+          Align(
             alignment: Alignment(1,-1),
             child: SmartFlareActor(width: MediaQuery.of(context).size.width*0.15, height: MediaQuery.of(context).size.height*0.15, filename: 'assets/App bg.flr',startingAnimation: 'ten',) ,
           ),
 
-           Align(
+          Align(
             alignment: Alignment(0,-1),
             child: SmartFlareActor(width: MediaQuery.of(context).size.width*0.35, height: MediaQuery.of(context).size.height*0.35, filename: 'assets/App bg.flr',startingAnimation: 'ten',) ,
           ),
@@ -113,7 +105,7 @@ class _BGState extends State<BG> {
             child: SmartFlareActor(width: MediaQuery.of(context).size.width*0.25, height: MediaQuery.of(context).size.height*0.25, filename: 'assets/App bg.flr',startingAnimation: 'seven',) ,
           ),
 
-           Align(
+          Align(
             alignment: Alignment(-1,0.5),
             child: SmartFlareActor(width: MediaQuery.of(context).size.width*0.25, height: MediaQuery.of(context).size.height*0.25, filename: 'assets/App bg.flr',startingAnimation: 'two',) ,
           ),
@@ -122,9 +114,15 @@ class _BGState extends State<BG> {
             alignment: Alignment(-1,-0.5),
             child: SmartFlareActor(width: MediaQuery.of(context).size.width*0.25, height: MediaQuery.of(context).size.height*0.25, filename: 'assets/App bg.flr',startingAnimation: 'six',) ,
           ),
+
+          Container(
+            height: MediaQuery.of(context).size.height,
+            width: MediaQuery.of(context).size.width,
+            color: Colors.white30,
+          )
+
         ],
-      ),      
+      ),
     );
   }
 }
-

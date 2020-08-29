@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>147911777395-ceaggk6jknvatlhic56tedsnsr87ej82.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.147911777395-ceaggk6jknvatlhic56tedsnsr87ej82</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDA1njk9bslxYH8qDOIvkOwf9ACJW57SfA</string>
+	<key>GCM_SENDER_ID</key>
+	<string>147911777395</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>BRLapplication</string>
+	<key>PROJECT_ID</key>
+	<string>brlapp-39e5d</string>
+	<key>STORAGE_BUCKET</key>
+	<string>brlapp-39e5d.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:147911777395:ios:ee2a1afba0823b5534de06</string>
+	<key>DATABASE_URL</key>
+	<string>https://brlapp-39e5d.firebaseio.com</string>
+</dict>
+</plist>
